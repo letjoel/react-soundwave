@@ -1,0 +1,28 @@
+@import './normalize.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+/* Custom vars */
+:root {
+    --general-bg-color: #2F303A;
+    --footer-bg-color: #2f303a;
+    --icons-bg-color: #202027;
+    --nav-hover-color: #adadad;
+    --border-input-color: #2E3852;
+    --border-input-focus-color: #596da0;
+    --button-bg-color:#1762a7;
+    --button-hover-color: #2180d8;
+    --button-focus-color: #2796ff;
+    --accent-text-color: #bc3a80;
+    --circle1-color: #f8ebf3;
+    --circle2-color: #eaeef7;
+
+}
+
+
+body {
+    font-family:'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+
+

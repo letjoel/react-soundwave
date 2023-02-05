@@ -1,0 +1,33 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+.navbar>header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    padding: 0 10px;
+    max-width: 1200px;
+}
+.logo{
+    display: flex;
+    gap: 10px;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.logo>p{
+    font-size: 1.6rem;
+    font-weight: semibold;
+    
+}
+.navbar>header>ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+.navbar>header>ul>li:hover{
+    color: var(--nav-hover-color);
+}
