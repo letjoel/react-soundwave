@@ -1,14 +1,9 @@
 import { ThemeProvider, createTheme } from "@mui/material";
+import { themeVars } from "./themeVars.enum";
 
 type ThemeProp = {
   children: JSX.Element;
 };
-
-export enum themeVars {
-  BG_BLUE = "#1762a7",
-  BG_DARKBLUE = "#211f27",
-  FONT_GLOBAL = "'Poppins', sans-serif",
-}
 
 const theme = createTheme({
   palette: {
@@ -20,6 +15,10 @@ const theme = createTheme({
     },
   },
   typography: {
+    h1: {
+      fontWeight: 600,
+      fontSize: "3.7rem",
+    },
     fontFamily: themeVars.FONT_GLOBAL,
   },
   components: {
@@ -36,6 +35,17 @@ const theme = createTheme({
       defaultProps: {
         style: {
           marginTop: "20px",
+        },
+      },
+    },
+    MuiInputLabel: {
+      defaultProps: {
+        style: {
+          marginBottom: "-20px",
+          marginTop: "20px",
+          fontSize: "1.2rem",
+          color: "white",
+          fontWeight: "bold",
         },
       },
     },

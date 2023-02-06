@@ -1,50 +1,45 @@
-import {
-  FormControl,
-  InputLabel,
-  Input,
-  Button,
-  Grid,
-  Box,
-} from "@mui/material";
-import React from "react";
+import { InputLabel, Button, Grid, Box, Container } from "@mui/material";
+import { FormTextInput } from "../FormTextInput/FormTextInput";
 
 function Form() {
   return (
     <Box
       component="form"
       sx={{
-        width: 400,
-        height: 300,
+        width: 450,
+        height: 400,
         backgroundColor: "secondary.main",
-        borderRadius: 2,
-        padding: 5,
+        borderRadius: 4,
+        padding: 4,
       }}
     >
-      <Grid container>
-        <Grid xs={12}>
-          <FormControl fullWidth>
-            <InputLabel htmlFor="name">Name:</InputLabel>
-            <Input id="name" type="text" />
-          </FormControl>
+      <Container>
+        <Grid container>
+          <Grid xs={12}>
+            <InputLabel shrink htmlFor="name-input">
+              Name:
+            </InputLabel>
+            <FormTextInput type="text" id="name-input" />
+          </Grid>
+          <Grid xs={12}>
+            <InputLabel shrink htmlFor="email-input">
+              Email:
+            </InputLabel>
+            <FormTextInput type="email" id="email-input" />
+          </Grid>
+          <Grid xs={12}>
+            <InputLabel sx={{ mb: 0 }} shrink htmlFor="pass-input">
+              Password:
+            </InputLabel>
+            <FormTextInput type="password" id="pass-input" />
+          </Grid>
+          <Grid xs={12}>
+            <Button fullWidth type="submit" variant="contained" color="primary">
+              Join now
+            </Button>
+          </Grid>
         </Grid>
-        <Grid xs={12}>
-          <FormControl fullWidth>
-            <InputLabel htmlFor="email">Email:</InputLabel>
-            <Input id="email" type="email" />
-          </FormControl>
-        </Grid>
-        <Grid xs={12}>
-          <FormControl fullWidth>
-            <InputLabel htmlFor="pwd">Password:</InputLabel>
-            <Input id="pwd" type="password" />
-          </FormControl>
-        </Grid>
-        <Grid xs={12}>
-          <Button variant="contained" color="primary">
-            Join now
-          </Button>
-        </Grid>
-      </Grid>
+      </Container>
     </Box>
   );
 }
