@@ -19,6 +19,14 @@ const theme = createTheme({
       fontWeight: 600,
       fontSize: "3.7rem",
     },
+    h2: {
+      fontWeight: 600,
+      fontSize: "3.1rem",
+    },
+    h5: {
+      fontWeight: 400,
+      fontSize: "1rem",
+    },
     fontFamily: themeVars.FONT_GLOBAL,
   },
   components: {
