@@ -6,8 +6,9 @@ function Form() {
     <Box
       component="form"
       sx={{
-        width: 450,
         height: 400,
+        minWidth: 340,
+        maxWidth: 450,
         backgroundColor: "secondary.main",
         borderRadius: 4,
         padding: 4,

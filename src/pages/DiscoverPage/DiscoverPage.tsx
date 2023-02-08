@@ -7,6 +7,7 @@ import styles from "./DiscoverPage.module.css";
 import iconCharts from "../../assets/images/microphone.svg";
 import iconAlbums from "../../assets/images/albums.svg";
 import iconMore from "../../assets/images/more.svg";
+import Footer from "../../components/Footer/Footer";
 
 function DiscoverPage() {
   return (
@@ -70,6 +71,7 @@ function DiscoverPage() {
           </Grid>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

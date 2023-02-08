@@ -1,4 +1,6 @@
 import { Grid, Typography } from "@mui/material";
+import FloatingCircle from "../../components/FloatingCircle/FloatingCircle";
+import Footer from "../../components/Footer/Footer";
 import Form from "../../components/Form/Form";
 import layoutStyles from "../../styles/mainLayout.module.css";
 import "./JoinPage.module.css";
@@ -6,6 +8,8 @@ import "./JoinPage.module.css";
 function JoinPage() {
   return (
     <>
+      <FloatingCircle />
+      <FloatingCircle />
       <div className={layoutStyles.main}>
         <div className={layoutStyles.mainContainer}>
           <Grid container alignItems="center">
@@ -28,6 +32,7 @@ function JoinPage() {
           </Grid>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
